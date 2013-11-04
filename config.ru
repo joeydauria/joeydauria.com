@@ -1,5 +1,5 @@
 use Rack::Static, 
-  :urls => ["/"],
+  :urls => ["/assets"].concat(Dir["public/*.html"].map { |f| "/#{File.basename(f)}" }),
   :root => "public"
 
 run lambda { |env|
