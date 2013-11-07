@@ -1,2 +1,5 @@
 source "https://rubygems.org"
-gem 'rack'
+ruby "2.0.0"
+gem "rack"
+gem "rack-rewrite"
+gem "thin"
